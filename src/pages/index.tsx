@@ -299,7 +299,7 @@ export default function LandingPage() {
             </div>
             <div>
               <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
-              <p className="text-gray-400">Phone: (123) 456-7890</p>
+              <p className="text-gray-400">Phone: +27 76 604 4335</p>
               <p className="text-gray-400">Email: info@Lag2Boost.com</p>
             </div>
             <div>
