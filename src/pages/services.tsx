@@ -2,6 +2,7 @@
 
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { Button } from "@/components/ui/button"
+import { Binoculars, Building, Gem, Medal, PartyPopper, Plane } from 'lucide-react'
 
 export default function ServicesPage() {
   const { scrollY } = useScroll()
@@ -49,12 +50,12 @@ export default function ServicesPage() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {[
-            { title: "Corporate Events", icon: "🏢", description: "Impress clients and colleagues with our executive fleet. Perfect for roadshows, conferences, and business meetings." },
-            { title: "Weddings", icon: "💍", description: "Make your special day even more memorable with our luxury vehicles. Arrive in style and comfort on your wedding day." },
-            { title: "Proms & Formals", icon: "🎉", description: "Arrive in style for your once-in-a-lifetime celebration. Our vehicles add a touch of sophistication to your prom night." },
-            { title: "Airport Transfers", icon: "✈️", description: "Start and end your journey in comfort and luxury. Our reliable airport transfer service ensures stress-free travel." },
-            { title: "City Tours", icon: "🏙️", description: "Explore the city in the lap of luxury with our guided tours. Discover local attractions in comfort and style." },
-            { title: "Special Occasions", icon: "🎊", description: "Celebrate birthdays, anniversaries, or any special moment with us. Our luxury rides make every occasion extraordinary." },
+            { title: "Corporate Events", icon: <Building />, description: "Impress clients and colleagues with our executive fleet. Perfect for roadshows, conferences, and business meetings." },
+            { title: "Weddings", icon: <Gem/>, description: "Make your special day even more memorable with our luxury vehicles. Arrive in style and comfort on your wedding day." },
+            { title: "Proms & Formals", icon: <PartyPopper/>, description: "Arrive in style for your once-in-a-lifetime celebration. Our vehicles add a touch of sophistication to your prom night." },
+            { title: "Airport Transfers", icon: <Plane/>, description: "Start and end your journey in comfort and luxury. Our reliable airport transfer service ensures stress-free travel." },
+            { title: "City Tours", icon: <Binoculars/>, description: "Explore the city in the lap of luxury with our guided tours. Discover local attractions in comfort and style." },
+            { title: "Special Occasions", icon: <Medal/>, description: "Celebrate birthdays, anniversaries, or any special moment with us. Our luxury rides make every occasion extraordinary." },
           ].map((service, index) => (
             <motion.div
               key={index}
