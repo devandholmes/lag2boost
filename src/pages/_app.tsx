@@ -8,8 +8,6 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <div>
-        <link href="https://fonts.googleapis.com/css2?family=Playwrite+HU&display=swap" rel="stylesheet" />
-
           <Providers>
             <NavBar />
             <Component {...pageProps} />

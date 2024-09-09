@@ -2,15 +2,9 @@
 
 import { useState, useEffect } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
-import { Menu, X, ChevronRight, Building, Gem, PartyPopper, Plane, Binoculars, Medal, ArrowUp } from 'lucide-react'
+import { Building, Gem, PartyPopper, Plane, Binoculars, Medal, ArrowUp } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import Link from 'next/link'
-import { LuPartyPopper, LuPlane } from 'react-icons/lu'
-import { FaBuilding, FaPlane } from 'react-icons/fa'
-import { GiBigDiamondRing } from 'react-icons/gi'
-import { MdOutlineTour } from 'react-icons/md'
-import { CiTrophy } from 'react-icons/ci'
-
 export default function LandingPage() {
   const { scrollY } = useScroll()
   const [showScrollButton, setShowScrollButton] = useState(false)
@@ -95,7 +89,7 @@ export default function LandingPage() {
               viewport={{ once: true }}
             >
               <p className="text-lg mb-6">
-                At Lag2Boost, we believe that every journey should be an experience in itself. Whether you're heading to a red-carpet event, a business meeting, or your dream wedding, we provide the perfect vehicle to match the occasion.
+                At Lag2Boost, we believe that every journey should be an experience in itself. Whether you&apos;re heading to a red-carpet event, a business meeting, or your dream wedding, we provide the perfect vehicle to match the occasion.
               </p>
               <p className="text-lg mb-6">
                 Our fleet of meticulously maintained luxury vehicles, coupled with our professional chauffeurs, ensures that you arrive at your destination in style, comfort, and safety.
@@ -237,7 +231,7 @@ export default function LandingPage() {
             className="max-w-4xl mx-auto text-center"
           >
             <p className="text-2xl italic mb-8">
-              "Lag2Boost made our wedding day even more special. The car was immaculate, the driver was professional, and the entire experience was nothing short of perfection."
+              &quot;Lag2Boost made our wedding day even more special. The car was immaculate, the driver was professional, and the entire experience was nothing short of perfection.&quot;
             </p>
             <p className="text-gold-500 font-semibold">- Sarah & Michael, Newlyweds</p>
           </motion.div>
@@ -263,7 +257,7 @@ export default function LandingPage() {
             viewport={{ once: true }}
             className="text-xl mb-12 max-w-2xl mx-auto"
           >
-            Don't settle for ordinary transportation. Experience the luxury, comfort, and style that Lag2Boost offers for your next special event.
+            Don&apos;t settle for ordinary transportation. Experience the luxury, comfort, and style that Lag2Boost offers for your next special event.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}

@@ -4,7 +4,7 @@ import { motion, useScroll, useTransform } from 'framer-motion'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { MapPin, Phone, Mail } from 'lucide-react'
+import { Phone, Mail } from 'lucide-react'
 import { BsWhatsapp } from 'react-icons/bs'
 
 export default function ContactPage() {
@@ -47,7 +47,7 @@ export default function ContactPage() {
                 >
                     <h2 className="text-3xl font-bold mb-8 text-center">Get in Touch</h2>
                     <p className="text-lg text-center max-w-3xl mx-auto mb-12">
-                        Whether you have a question about our services, need a custom quote, or want to provide feedback, we're here to help. Reach out to us and experience our commitment to exceptional customer service.
+                        Whether you have a question about our services, need a custom quote, or want to provide feedback, we&apos;re here to help. Reach out to us and experience our commitment to exceptional customer service.
                     </p>
                 </motion.section>
 

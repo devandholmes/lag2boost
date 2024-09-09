@@ -3,7 +3,6 @@
 import { useState } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { Button } from "@/components/ui/button"
-import Link from 'next/link'
 
 const vehicles = [
   { id: 1, name: "Rolls-Royce Phantom", category: "Sedan", image: "https://c4.wallpaperflare.com/wallpaper/118/497/185/rolls-royce-rolls-royce-phantom-car-full-size-car-wallpaper-preview.jpg", description: "The epitome of luxury, perfect for VIP transportation and special events." },
@@ -57,7 +56,7 @@ export default function FleetPage() {
         >
           <h2 className="text-3xl font-bold mb-8 text-center">Explore Our Luxury Vehicles</h2>
           <p className="text-lg text-center max-w-3xl mx-auto mb-8">
-            Discover our handpicked selection of premium vehicles, each offering a unique blend of style, comfort, and performance. Whether you're looking for a sleek sedan, a spacious SUV, or a sporty coupe, we have the perfect ride for your needs.
+            Discover our handpicked selection of premium vehicles, each offering a unique blend of style, comfort, and performance. Whether you&apos;re looking for a sleek sedan, a spacious SUV, or a sporty coupe, we have the perfect ride for your needs.
           </p>
           <div className="flex justify-center space-x-4 mb-12">
             {['All', 'Sedan', 'SUV', 'Coupe'].map((category) => (
@@ -99,9 +98,9 @@ export default function FleetPage() {
           viewport={{ once: true }}
           className="mt-16 text-center"
         >
-          <h2 className="text-3xl font-bold mb-8">Can't Find What You're Looking For?</h2>
+          <h2 className="text-3xl font-bold mb-8">Can&apos;t Find What You&apos;re Looking For?</h2>
           <p className="text-lg mb-8">
-            Our fleet is constantly expanding. If you have a specific vehicle in mind, don't hesitate to reach out.
+            Our fleet is constantly expanding. If you have a specific vehicle in mind, don&apos;t hesitate to reach out.
           </p>
           <Button size="lg" className="bg-gold-500 hover:bg-gold-600 text-black" onClick={() => window.location.href = '/contact'}>
             Contact Us
